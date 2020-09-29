@@ -1,8 +1,24 @@
 var scores, roundScore, ActivePlayer;
 
-scores = [0, 0];
-roundScore = 0;
-ActivePlayer = 1;
+function init() {
+  scores = [0, 0];
+  roundScore = 0;
+  ActivePlayer = 1;
+  document.querySelector(".dice").style.display = "none";
+  document.getElementById("score-1").textContent = "0";
+  document.getElementById("score-2").textContent = "0";
+  document.getElementById("current-1").textContent = "0";
+  document.getElementById("current-2").textContent = "0";
+  document.getElementById("name-1").textContent = "Player 1";
+  document.getElementById("name-2").textContent = "Player 2";
+  document.querySelector(".player-1").classList.remove("winner");
+  document.querySelector(".player-2").classList.remove("winner");
+  document.querySelector(".player-1").classList.remove("active");
+  document.querySelector(".player-2").classList.remove("active");
+  document.querySelector(".player-1").classList.add("active");
+}
+
+init();
 
 //document.querySelector("#current-" + ActivePlayer).textContent = dice;
 
@@ -74,3 +90,5 @@ function nextPlayer() {
     document.querySelector(".dice").style.display = "none";
   }, 1020);
 }
+
+document.querySelector(".btn-new").addEventListener("click", init);
