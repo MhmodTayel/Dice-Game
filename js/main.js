@@ -1,7 +1,5 @@
 var scores, roundScore, ActivePlayer, gamePlaying, winningScore;
 
-console.log(winningScore);
-
 function init() {
   scores = [0, 0];
   roundScore = 0;
@@ -36,7 +34,7 @@ document.querySelector(".btn-roll").addEventListener("click", function () {
     }
 
     var dice = Math.floor(Math.random() * 6) + 1;
-    console.log(dice);
+
     setTimeout(function () {
       diceDOM.src = "img/dice-" + dice + ".png";
     }, 720);
@@ -96,5 +94,4 @@ function nextPlayer() {
 document.querySelector(".btn-new").addEventListener("click", function () {
   init();
   winningScore = document.querySelector(".form__field").value;
-  console.log(winningScore);
 });
