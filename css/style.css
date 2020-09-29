@@ -248,12 +248,22 @@ a {
 .popup i {
   font-size: 18px;
   transform: translateY(3px);
-  
 }
 
 .popup p:not(:last-child) {
-  
   margin-bottom: 1rem;
   line-height: 1.8;
-  
+}
+
+.winner {
+  background: #f7f7f7;
+}
+.winner .player-name {
+  font-weight: 600;
+  color: #eb4d4d;
+  font-size: 50px;
+}
+.winner .player-score {
+  font-weight: 600;
+  color: #eb4d4d;
 }
