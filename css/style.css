@@ -268,13 +268,11 @@ a {
   color: #eb4d4d;
 }
 
-
 .form__group {
   position: absolute;
   padding: 15px 0 0;
   margin-top: 10px;
   width: 10%;
-
 }
 .form__field {
   font-family: inherit;
@@ -322,5 +320,62 @@ a {
   font-weight: 700;
 }
 /* reset input */
-.form__field:required, .form__field:invalid {
-  box-shadow: none;}
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+@media (max-width: 500px) {
+  .container {
+    height: 100%;
+    overflow: auto;
+    flex-direction: column;
+  }
+
+  .player-name {
+    font-size: 25px;
+  }
+  .active .player-name::after {
+    top: -11px;
+    right: -28px;
+    font-size: 40px;
+  }
+
+  .player-score {
+    font-size: 50px;
+  }
+  .player-current-box {
+    transform: translateY(-80px);
+    width: 65%;
+  }
+
+  .btn-new {
+    top: 107px;
+  }
+  .btn-roll {
+    top: 483px;
+  }
+  .btn-hold {
+    top: 545px;
+  }
+  .btn {
+    padding: 8px 11px;
+    font-size: 12px;
+  }
+
+  .form__group {
+
+    width: 27%;}
+
+    .form__field {
+
+      font-size: 15px;}
+  .player-2 {
+    /* height: 0; */
+  }
+  .player-1 {
+    width: 100%;
+    padding-top: 180px;
+    /* height: 50%; */
+  }
+}
