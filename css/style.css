@@ -364,14 +364,23 @@ a {
   }
 
   .form__group {
+    width: 27%;
+  }
 
-    width: 27%;}
+  .form__field {
+    font-size: 15px;
+  }
 
-    .form__field {
-
-      font-size: 15px;}
+  .dice {
+    top: 618px;
+  }
   .player-2 {
-    /* height: 0; */
+    padding-top: 200px;
+    width: 100%;
+  }
+
+  #name-2 {
+    margin: auto;
   }
   .player-1 {
     width: 100%;
